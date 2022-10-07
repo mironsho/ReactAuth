@@ -18,7 +18,7 @@ function App() {
   }, []);
   return (
     <Router>
-      <AuthProvider value={{ currentUser }}>
+      <AuthProvider value={{ currentUser, timeActive, setTimeActive }}>
         <Switch>
           <Route exact path="/" component={Profile} />
           <Route exact path="/login" component={Login} />

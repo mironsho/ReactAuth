@@ -12,6 +12,7 @@ function Login() {
     console.log(currentUser);
     return;
   }
+  ChildOfAuthProvider();
 
   return (
     <div className="center">
